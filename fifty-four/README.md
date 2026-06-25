@@ -135,6 +135,21 @@ sudo systemctl restart nginx
    npx expo start
    ```
 
+# Build APK
+```
+npx expo install --fix
+
+npx expo prebuild --clean
+
+cd android
+.\gradlew clean 
+.\gradlew assembleRelease
+android\app\build\outputs\apk\release\app-release.apk
+```
+
+
+
+
 In the output, you'll find options to open the app in a
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
