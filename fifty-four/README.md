@@ -167,3 +167,23 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Mychat with Expo users and ask questions.
+
+
+# Як правильно ставити бібліотеки
+```
+npx expo install НАЗВА_БІБЛІОТЕКИ
+```
+
+# Build APK
+
+```
+npm install
+npx expo install --fix
+
+npx expo prebuild --clean
+
+cd android
+.\gradlew clean 
+.\gradlew assembleRelease
+android\app\build\outputs\apk\release\app-release.apk
+```
